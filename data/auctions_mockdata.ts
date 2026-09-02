@@ -1,0 +1,1569 @@
+export const auctions = [
+  {
+    "id": "auc_0001",
+    "item_name": "Item de Coleccionables 1",
+    "description": "Descripción detallada del item 1 de la categoría Coleccionables.",
+    "category": "Coleccionables",
+    "seller_id": "usr_001",
+    "base_price": 154383,
+    "min_increment": 38688,
+    "current_highest_bid": 812079,
+    "published_at": "2026-09-01T06:22:10.746448",
+    "closing_date": "2026-09-19T13:30:04.846722",
+    "status": "ABIERTA",
+    "winner_id": null,
+    "bids": [
+      {
+        "id": "bid_001_03",
+        "bidder_id": "usr_015",
+        "amount": 657327,
+        "created_at": "2026-09-01T07:26:12.746448"
+      },
+      {
+        "id": "bid_001_01",
+        "bidder_id": "usr_019",
+        "amount": 386511,
+        "created_at": "2026-09-01T10:50:36.746448"
+      },
+      {
+        "id": "bid_001_04",
+        "bidder_id": "usr_008",
+        "amount": 696015,
+        "created_at": "2026-09-01T14:55:33.746448"
+      },
+      {
+        "id": "bid_001_00",
+        "bidder_id": "usr_010",
+        "amount": 154383,
+        "created_at": "2026-09-01T16:04:31.746448"
+      },
+      {
+        "id": "bid_001_05",
+        "bidder_id": "usr_011",
+        "amount": 812079,
+        "created_at": "2026-09-02T01:56:40.746448"
+      },
+      {
+        "id": "bid_001_02",
+        "bidder_id": "usr_012",
+        "amount": 502575,
+        "created_at": "2026-09-02T02:53:24.746448"
+      }
+    ]
+  },
+  {
+    "id": "auc_0002",
+    "item_name": "Item de Arte 2",
+    "description": "Descripción detallada del item 2 de la categoría Arte.",
+    "category": "Arte",
+    "seller_id": "usr_014",
+    "base_price": 2915281,
+    "min_increment": 9081,
+    "current_highest_bid": 3242197,
+    "published_at": "2026-08-30T02:27:27.496922",
+    "closing_date": "2026-09-19T22:05:29.377892",
+    "status": "ABIERTA",
+    "winner_id": null,
+    "bids": [
+      {
+        "id": "bid_002_00",
+        "bidder_id": "usr_004",
+        "amount": 2915281,
+        "created_at": "2026-08-30T03:58:09.496922"
+      },
+      {
+        "id": "bid_002_02",
+        "bidder_id": "usr_002",
+        "amount": 2987929,
+        "created_at": "2026-08-30T14:22:38.496922"
+      },
+      {
+        "id": "bid_002_09",
+        "bidder_id": "usr_017",
+        "amount": 3187711,
+        "created_at": "2026-08-30T16:48:23.496922"
+      },
+      {
+        "id": "bid_002_01",
+        "bidder_id": "usr_015",
+        "amount": 2969767,
+        "created_at": "2026-08-31T05:36:35.496922"
+      },
+      {
+        "id": "bid_002_06",
+        "bidder_id": "usr_009",
+        "amount": 3096901,
+        "created_at": "2026-08-31T05:41:51.496922"
+      },
+      {
+        "id": "bid_002_07",
+        "bidder_id": "usr_008",
+        "amount": 3133225,
+        "created_at": "2026-08-31T20:48:06.496922"
+      },
+      {
+        "id": "bid_002_12",
+        "bidder_id": "usr_009",
+        "amount": 3242197,
+        "created_at": "2026-09-01T08:44:16.496922"
+      },
+      {
+        "id": "bid_002_10",
+        "bidder_id": "usr_015",
+        "amount": 3214954,
+        "created_at": "2026-09-01T14:51:20.496922"
+      },
+      {
+        "id": "bid_002_03",
+        "bidder_id": "usr_010",
+        "amount": 3015172,
+        "created_at": "2026-09-01T16:54:51.496922"
+      },
+      {
+        "id": "bid_002_05",
+        "bidder_id": "usr_011",
+        "amount": 3078739,
+        "created_at": "2026-09-01T22:02:32.496922"
+      },
+      {
+        "id": "bid_002_04",
+        "bidder_id": "usr_010",
+        "amount": 3024253,
+        "created_at": "2026-09-02T03:09:11.496922"
+      },
+      {
+        "id": "bid_002_08",
+        "bidder_id": "usr_006",
+        "amount": 3142306,
+        "created_at": "2026-09-02T06:32:46.496922"
+      },
+      {
+        "id": "bid_002_11",
+        "bidder_id": "usr_002",
+        "amount": 3224035,
+        "created_at": "2026-09-02T12:21:07.496922"
+      }
+    ]
+  },
+  {
+    "id": "auc_0003",
+    "item_name": "Item de Hogar 3",
+    "description": "Descripción detallada del item 3 de la categoría Hogar.",
+    "category": "Hogar",
+    "seller_id": "usr_009",
+    "base_price": 3864934,
+    "min_increment": 6837,
+    "current_highest_bid": null,
+    "published_at": "2026-08-29T11:09:49.687024",
+    "closing_date": "2026-09-27T02:15:50.618494",
+    "status": "CANCELADA",
+    "winner_id": null,
+    "bids": []
+  },
+  {
+    "id": "auc_0004",
+    "item_name": "Item de Hogar 4",
+    "description": "Descripción detallada del item 4 de la categoría Hogar.",
+    "category": "Hogar",
+    "seller_id": "usr_003",
+    "base_price": 2043083,
+    "min_increment": 5365,
+    "current_highest_bid": 2241588,
+    "published_at": "2026-08-31T17:56:11.499433",
+    "closing_date": "2026-09-10T06:57:12.988089",
+    "status": "ABIERTA",
+    "winner_id": null,
+    "bids": [
+      {
+        "id": "bid_004_10",
+        "bidder_id": "usr_011",
+        "amount": 2241588,
+        "created_at": "2026-09-01T03:22:46.499433"
+      },
+      {
+        "id": "bid_004_02",
+        "bidder_id": "usr_013",
+        "amount": 2102098,
+        "created_at": "2026-09-01T05:58:03.499433"
+      },
+      {
+        "id": "bid_004_03",
+        "bidder_id": "usr_010",
+        "amount": 2123558,
+        "created_at": "2026-09-01T10:20:43.499433"
+      },
+      {
+        "id": "bid_004_07",
+        "bidder_id": "usr_009",
+        "amount": 2204033,
+        "created_at": "2026-09-01T12:23:57.499433"
+      },
+      {
+        "id": "bid_004_09",
+        "bidder_id": "usr_001",
+        "amount": 2230858,
+        "created_at": "2026-09-01T12:33:28.499433"
+      },
+      {
+        "id": "bid_004_06",
+        "bidder_id": "usr_007",
+        "amount": 2177208,
+        "created_at": "2026-09-01T13:15:50.499433"
+      },
+      {
+        "id": "bid_004_01",
+        "bidder_id": "usr_014",
+        "amount": 2075273,
+        "created_at": "2026-09-01T17:01:53.499433"
+      },
+      {
+        "id": "bid_004_04",
+        "bidder_id": "usr_017",
+        "amount": 2155748,
+        "created_at": "2026-09-01T18:15:41.499433"
+      },
+      {
+        "id": "bid_004_08",
+        "bidder_id": "usr_019",
+        "amount": 2214763,
+        "created_at": "2026-09-01T20:55:12.499433"
+      },
+      {
+        "id": "bid_004_00",
+        "bidder_id": "usr_012",
+        "amount": 2043083,
+        "created_at": "2026-09-01T22:33:04.499433"
+      },
+      {
+        "id": "bid_004_05",
+        "bidder_id": "usr_008",
+        "amount": 2166478,
+        "created_at": "2026-09-02T03:28:26.499433"
+      }
+    ]
+  },
+  {
+    "id": "auc_0005",
+    "item_name": "Item de Electrónica 5",
+    "description": "Descripción detallada del item 5 de la categoría Electrónica.",
+    "category": "Electrónica",
+    "seller_id": "usr_011",
+    "base_price": 4047889,
+    "min_increment": 27688,
+    "current_highest_bid": 4047889,
+    "published_at": "2026-08-28T20:56:48.627745",
+    "closing_date": "2026-09-04T07:44:40.969623",
+    "status": "ABIERTA",
+    "winner_id": null,
+    "bids": [
+      {
+        "id": "bid_005_00",
+        "bidder_id": "usr_004",
+        "amount": 4047889,
+        "created_at": "2026-08-30T05:33:56.627745"
+      }
+    ]
+  },
+  {
+    "id": "auc_0006",
+    "item_name": "Item de Arte 6",
+    "description": "Descripción detallada del item 6 de la categoría Arte.",
+    "category": "Arte",
+    "seller_id": "usr_019",
+    "base_price": 1307477,
+    "min_increment": 6207,
+    "current_highest_bid": null,
+    "published_at": "2026-08-31T21:33:27.787401",
+    "closing_date": "2026-09-19T05:04:36.699501",
+    "status": "CANCELADA",
+    "winner_id": null,
+    "bids": []
+  },
+  {
+    "id": "auc_0007",
+    "item_name": "Item de Vehículos 7",
+    "description": "Descripción detallada del item 7 de la categoría Vehículos.",
+    "category": "Vehículos",
+    "seller_id": "usr_015",
+    "base_price": 2180230,
+    "min_increment": 39086,
+    "current_highest_bid": 3860928,
+    "published_at": "2026-08-31T09:30:58.181280",
+    "closing_date": "2026-08-31T22:27:15.043920",
+    "status": "CERRADA",
+    "winner_id": "usr_017",
+    "bids": [
+      {
+        "id": "bid_007_03",
+        "bidder_id": "usr_001",
+        "amount": 2688348,
+        "created_at": "2026-08-31T09:34:32.181280"
+      },
+      {
+        "id": "bid_007_04",
+        "bidder_id": "usr_019",
+        "amount": 2766520,
+        "created_at": "2026-08-31T09:42:22.181280"
+      },
+      {
+        "id": "bid_007_12",
+        "bidder_id": "usr_013",
+        "amount": 3860928,
+        "created_at": "2026-08-31T09:52:27.181280"
+      },
+      {
+        "id": "bid_007_10",
+        "bidder_id": "usr_011",
+        "amount": 3587326,
+        "created_at": "2026-08-31T13:07:23.181280"
+      },
+      {
+        "id": "bid_007_11",
+        "bidder_id": "usr_012",
+        "amount": 3704584,
+        "created_at": "2026-08-31T13:20:39.181280"
+      },
+      {
+        "id": "bid_007_02",
+        "bidder_id": "usr_011",
+        "amount": 2571090,
+        "created_at": "2026-08-31T15:00:11.181280"
+      },
+      {
+        "id": "bid_007_08",
+        "bidder_id": "usr_020",
+        "amount": 3274638,
+        "created_at": "2026-08-31T15:36:05.181280"
+      },
+      {
+        "id": "bid_007_07",
+        "bidder_id": "usr_017",
+        "amount": 3157380,
+        "created_at": "2026-08-31T16:36:49.181280"
+      },
+      {
+        "id": "bid_007_05",
+        "bidder_id": "usr_008",
+        "amount": 2805606,
+        "created_at": "2026-08-31T17:49:44.181280"
+      },
+      {
+        "id": "bid_007_06",
+        "bidder_id": "usr_018",
+        "amount": 3040122,
+        "created_at": "2026-08-31T20:06:31.181280"
+      },
+      {
+        "id": "bid_007_01",
+        "bidder_id": "usr_003",
+        "amount": 2414746,
+        "created_at": "2026-08-31T21:43:55.181280"
+      },
+      {
+        "id": "bid_007_09",
+        "bidder_id": "usr_020",
+        "amount": 3391896,
+        "created_at": "2026-08-31T21:54:23.181280"
+      },
+      {
+        "id": "bid_007_00",
+        "bidder_id": "usr_017",
+        "amount": 2180230,
+        "created_at": "2026-08-31T22:08:15.181280"
+      }
+    ]
+  },
+  {
+    "id": "auc_0008",
+    "item_name": "Item de Moda 8",
+    "description": "Descripción detallada del item 8 de la categoría Moda.",
+    "category": "Moda",
+    "seller_id": "usr_014",
+    "base_price": 3216096,
+    "min_increment": 1409,
+    "current_highest_bid": 3247094,
+    "published_at": "2026-08-30T03:34:00.535109",
+    "closing_date": "2026-09-09T19:20:17.194126",
+    "status": "ABIERTA",
+    "winner_id": null,
+    "bids": [
+      {
+        "id": "bid_008_04",
+        "bidder_id": "usr_016",
+        "amount": 3231595,
+        "created_at": "2026-08-30T23:16:09.535109"
+      },
+      {
+        "id": "bid_008_00",
+        "bidder_id": "usr_008",
+        "amount": 3216096,
+        "created_at": "2026-08-31T09:55:12.535109"
+      },
+      {
+        "id": "bid_008_01",
+        "bidder_id": "usr_006",
+        "amount": 3217505,
+        "created_at": "2026-08-31T13:51:38.535109"
+      },
+      {
+        "id": "bid_008_07",
+        "bidder_id": "usr_011",
+        "amount": 3247094,
+        "created_at": "2026-08-31T16:44:47.535109"
+      },
+      {
+        "id": "bid_008_06",
+        "bidder_id": "usr_018",
+        "amount": 3241458,
+        "created_at": "2026-08-31T17:45:04.535109"
+      },
+      {
+        "id": "bid_008_02",
+        "bidder_id": "usr_003",
+        "amount": 3220323,
+        "created_at": "2026-08-31T19:29:46.535109"
+      },
+      {
+        "id": "bid_008_03",
+        "bidder_id": "usr_011",
+        "amount": 3223141,
+        "created_at": "2026-09-01T07:28:31.535109"
+      },
+      {
+        "id": "bid_008_05",
+        "bidder_id": "usr_011",
+        "amount": 3237231,
+        "created_at": "2026-09-02T07:33:49.535109"
+      }
+    ]
+  },
+  {
+    "id": "auc_0009",
+    "item_name": "Item de Electrónica 9",
+    "description": "Descripción detallada del item 9 de la categoría Electrónica.",
+    "category": "Electrónica",
+    "seller_id": "usr_017",
+    "base_price": 4965283,
+    "min_increment": 28688,
+    "current_highest_bid": 5194787,
+    "published_at": "2026-08-31T10:25:15.843228",
+    "closing_date": "2026-09-22T06:15:02.565381",
+    "status": "ABIERTA",
+    "winner_id": null,
+    "bids": [
+      {
+        "id": "bid_009_00",
+        "bidder_id": "usr_008",
+        "amount": 4965283,
+        "created_at": "2026-08-31T17:27:05.843228"
+      },
+      {
+        "id": "bid_009_01",
+        "bidder_id": "usr_009",
+        "amount": 5051347,
+        "created_at": "2026-09-01T10:48:52.843228"
+      },
+      {
+        "id": "bid_009_02",
+        "bidder_id": "usr_011",
+        "amount": 5194787,
+        "created_at": "2026-09-01T20:19:16.843228"
+      }
+    ]
+  },
+  {
+    "id": "auc_0010",
+    "item_name": "Item de Joyería 10",
+    "description": "Descripción detallada del item 10 de la categoría Joyería.",
+    "category": "Joyería",
+    "seller_id": "usr_010",
+    "base_price": 2609457,
+    "min_increment": 12818,
+    "current_highest_bid": 2929907,
+    "published_at": "2026-09-01T05:10:09.234995",
+    "closing_date": "2026-09-10T01:15:18.728782",
+    "status": "ABIERTA",
+    "winner_id": null,
+    "bids": [
+      {
+        "id": "bid_010_06",
+        "bidder_id": "usr_011",
+        "amount": 2852999,
+        "created_at": "2026-09-01T05:27:50.234995"
+      },
+      {
+        "id": "bid_010_03",
+        "bidder_id": "usr_001",
+        "amount": 2686365,
+        "created_at": "2026-09-01T23:22:15.234995"
+      },
+      {
+        "id": "bid_010_04",
+        "bidder_id": "usr_005",
+        "amount": 2750455,
+        "created_at": "2026-09-02T07:44:24.234995"
+      },
+      {
+        "id": "bid_010_08",
+        "bidder_id": "usr_004",
+        "amount": 2929907,
+        "created_at": "2026-09-02T09:39:52.234995"
+      },
+      {
+        "id": "bid_010_02",
+        "bidder_id": "usr_018",
+        "amount": 2647911,
+        "created_at": "2026-09-02T10:17:53.234995"
+      },
+      {
+        "id": "bid_010_05",
+        "bidder_id": "usr_012",
+        "amount": 2814545,
+        "created_at": "2026-09-02T10:19:13.234995"
+      },
+      {
+        "id": "bid_010_01",
+        "bidder_id": "usr_016",
+        "amount": 2635093,
+        "created_at": "2026-09-02T12:11:59.234995"
+      },
+      {
+        "id": "bid_010_00",
+        "bidder_id": "usr_012",
+        "amount": 2609457,
+        "created_at": "2026-09-02T13:05:34.234995"
+      },
+      {
+        "id": "bid_010_07",
+        "bidder_id": "usr_016",
+        "amount": 2891453,
+        "created_at": "2026-09-02T14:18:51.234995"
+      }
+    ]
+  },
+  {
+    "id": "auc_0011",
+    "item_name": "Item de Electrónica 11",
+    "description": "Descripción detallada del item 11 de la categoría Electrónica.",
+    "category": "Electrónica",
+    "seller_id": "usr_014",
+    "base_price": 2844843,
+    "min_increment": 40557,
+    "current_highest_bid": 3007071,
+    "published_at": "2026-09-01T11:41:50.949365",
+    "closing_date": "2026-09-12T08:53:54.898884",
+    "status": "ABIERTA",
+    "winner_id": null,
+    "bids": [
+      {
+        "id": "bid_011_00",
+        "bidder_id": "usr_017",
+        "amount": 2844843,
+        "created_at": "2026-09-01T14:39:35.949365"
+      },
+      {
+        "id": "bid_011_01",
+        "bidder_id": "usr_002",
+        "amount": 2966514,
+        "created_at": "2026-09-01T21:52:24.949365"
+      },
+      {
+        "id": "bid_011_02",
+        "bidder_id": "usr_016",
+        "amount": 3007071,
+        "created_at": "2026-09-02T07:12:02.949365"
+      }
+    ]
+  },
+  {
+    "id": "auc_0012",
+    "item_name": "Item de Hogar 12",
+    "description": "Descripción detallada del item 12 de la categoría Hogar.",
+    "category": "Hogar",
+    "seller_id": "usr_010",
+    "base_price": 4947250,
+    "min_increment": 24634,
+    "current_highest_bid": null,
+    "published_at": "2026-08-28T21:15:53.887803",
+    "closing_date": "2026-08-29T09:53:14.280705",
+    "status": "DESIERTA",
+    "winner_id": null,
+    "bids": []
+  },
+  {
+    "id": "auc_0013",
+    "item_name": "Item de Moda 13",
+    "description": "Descripción detallada del item 13 de la categoría Moda.",
+    "category": "Moda",
+    "seller_id": "usr_013",
+    "base_price": 305834,
+    "min_increment": 48430,
+    "current_highest_bid": 1904024,
+    "published_at": "2026-08-28T21:08:39.223359",
+    "closing_date": "2026-09-03T09:11:25.482267",
+    "status": "ABIERTA",
+    "winner_id": null,
+    "bids": [
+      {
+        "id": "bid_013_02",
+        "bidder_id": "usr_001",
+        "amount": 741704,
+        "created_at": "2026-08-29T08:17:09.223359"
+      },
+      {
+        "id": "bid_013_01",
+        "bidder_id": "usr_003",
+        "amount": 499554,
+        "created_at": "2026-08-29T10:57:26.223359"
+      },
+      {
+        "id": "bid_013_00",
+        "bidder_id": "usr_002",
+        "amount": 305834,
+        "created_at": "2026-08-29T16:27:43.223359"
+      },
+      {
+        "id": "bid_013_10",
+        "bidder_id": "usr_002",
+        "amount": 1904024,
+        "created_at": "2026-08-29T20:42:43.223359"
+      },
+      {
+        "id": "bid_013_06",
+        "bidder_id": "usr_008",
+        "amount": 1226004,
+        "created_at": "2026-08-30T03:33:26.223359"
+      },
+      {
+        "id": "bid_013_09",
+        "bidder_id": "usr_010",
+        "amount": 1613444,
+        "created_at": "2026-08-30T06:59:05.223359"
+      },
+      {
+        "id": "bid_013_08",
+        "bidder_id": "usr_020",
+        "amount": 1419724,
+        "created_at": "2026-08-31T10:12:00.223359"
+      },
+      {
+        "id": "bid_013_03",
+        "bidder_id": "usr_006",
+        "amount": 886994,
+        "created_at": "2026-08-31T17:44:46.223359"
+      },
+      {
+        "id": "bid_013_05",
+        "bidder_id": "usr_006",
+        "amount": 1177574,
+        "created_at": "2026-09-01T01:49:42.223359"
+      },
+      {
+        "id": "bid_013_07",
+        "bidder_id": "usr_014",
+        "amount": 1274434,
+        "created_at": "2026-09-01T06:34:11.223359"
+      },
+      {
+        "id": "bid_013_04",
+        "bidder_id": "usr_017",
+        "amount": 1129144,
+        "created_at": "2026-09-02T02:31:19.223359"
+      }
+    ]
+  },
+  {
+    "id": "auc_0014",
+    "item_name": "Item de Hogar 14",
+    "description": "Descripción detallada del item 14 de la categoría Hogar.",
+    "category": "Hogar",
+    "seller_id": "usr_016",
+    "base_price": 1479960,
+    "min_increment": 32101,
+    "current_highest_bid": 1897273,
+    "published_at": "2026-09-01T19:56:35.595823",
+    "closing_date": "2026-09-11T05:54:11.466106",
+    "status": "ABIERTA",
+    "winner_id": null,
+    "bids": [
+      {
+        "id": "bid_014_04",
+        "bidder_id": "usr_015",
+        "amount": 1897273,
+        "created_at": "2026-09-01T23:59:37.595823"
+      },
+      {
+        "id": "bid_014_01",
+        "bidder_id": "usr_007",
+        "amount": 1608364,
+        "created_at": "2026-09-02T02:10:11.595823"
+      },
+      {
+        "id": "bid_014_03",
+        "bidder_id": "usr_013",
+        "amount": 1800970,
+        "created_at": "2026-09-02T02:45:51.595823"
+      },
+      {
+        "id": "bid_014_02",
+        "bidder_id": "usr_010",
+        "amount": 1736768,
+        "created_at": "2026-09-02T03:07:59.595823"
+      },
+      {
+        "id": "bid_014_00",
+        "bidder_id": "usr_019",
+        "amount": 1479960,
+        "created_at": "2026-09-02T11:32:45.595823"
+      }
+    ]
+  },
+  {
+    "id": "auc_0015",
+    "item_name": "Item de Vehículos 15",
+    "description": "Descripción detallada del item 15 de la categoría Vehículos.",
+    "category": "Vehículos",
+    "seller_id": "usr_008",
+    "base_price": 2301881,
+    "min_increment": 37578,
+    "current_highest_bid": 2527349,
+    "published_at": "2026-08-28T21:06:49.491108",
+    "closing_date": "2026-09-14T06:34:58.042245",
+    "status": "ABIERTA",
+    "winner_id": null,
+    "bids": [
+      {
+        "id": "bid_015_01",
+        "bidder_id": "usr_012",
+        "amount": 2489771,
+        "created_at": "2026-08-31T10:48:29.491108"
+      },
+      {
+        "id": "bid_015_02",
+        "bidder_id": "usr_015",
+        "amount": 2527349,
+        "created_at": "2026-08-31T12:26:36.491108"
+      },
+      {
+        "id": "bid_015_00",
+        "bidder_id": "usr_012",
+        "amount": 2301881,
+        "created_at": "2026-09-02T03:34:17.491108"
+      }
+    ]
+  },
+  {
+    "id": "auc_0016",
+    "item_name": "Item de Arte 16",
+    "description": "Descripción detallada del item 16 de la categoría Arte.",
+    "category": "Arte",
+    "seller_id": "usr_004",
+    "base_price": 4367458,
+    "min_increment": 35351,
+    "current_highest_bid": 5427988,
+    "published_at": "2026-08-29T02:05:23.306351",
+    "closing_date": "2026-09-19T18:58:18.503440",
+    "status": "ABIERTA",
+    "winner_id": null,
+    "bids": [
+      {
+        "id": "bid_016_07",
+        "bidder_id": "usr_002",
+        "amount": 5427988,
+        "created_at": "2026-08-29T11:46:46.306351"
+      },
+      {
+        "id": "bid_016_01",
+        "bidder_id": "usr_001",
+        "amount": 4438160,
+        "created_at": "2026-08-29T13:06:03.306351"
+      },
+      {
+        "id": "bid_016_02",
+        "bidder_id": "usr_012",
+        "amount": 4473511,
+        "created_at": "2026-08-29T15:20:40.306351"
+      },
+      {
+        "id": "bid_016_05",
+        "bidder_id": "usr_015",
+        "amount": 5074478,
+        "created_at": "2026-08-29T19:13:24.306351"
+      },
+      {
+        "id": "bid_016_04",
+        "bidder_id": "usr_010",
+        "amount": 4897723,
+        "created_at": "2026-08-30T15:20:06.306351"
+      },
+      {
+        "id": "bid_016_00",
+        "bidder_id": "usr_006",
+        "amount": 4367458,
+        "created_at": "2026-08-30T21:34:29.306351"
+      },
+      {
+        "id": "bid_016_03",
+        "bidder_id": "usr_001",
+        "amount": 4685617,
+        "created_at": "2026-08-31T01:49:14.306351"
+      },
+      {
+        "id": "bid_016_06",
+        "bidder_id": "usr_008",
+        "amount": 5215882,
+        "created_at": "2026-09-02T00:25:32.306351"
+      }
+    ]
+  },
+  {
+    "id": "auc_0017",
+    "item_name": "Item de Coleccionables 17",
+    "description": "Descripción detallada del item 17 de la categoría Coleccionables.",
+    "category": "Coleccionables",
+    "seller_id": "usr_002",
+    "base_price": 2593494,
+    "min_increment": 13015,
+    "current_highest_bid": 2593494,
+    "published_at": "2026-09-01T22:03:31.757996",
+    "closing_date": "2026-09-16T12:09:22.922122",
+    "status": "ABIERTA",
+    "winner_id": null,
+    "bids": [
+      {
+        "id": "bid_017_00",
+        "bidder_id": "usr_018",
+        "amount": 2593494,
+        "created_at": "2026-09-01T23:10:18.757996"
+      }
+    ]
+  },
+  {
+    "id": "auc_0018",
+    "item_name": "Item de Deportes 18",
+    "description": "Descripción detallada del item 18 de la categoría Deportes.",
+    "category": "Deportes",
+    "seller_id": "usr_019",
+    "base_price": 3453693,
+    "min_increment": 7992,
+    "current_highest_bid": 3749397,
+    "published_at": "2026-09-02T11:04:07.820581",
+    "closing_date": "2026-09-14T00:06:01.012333",
+    "status": "ABIERTA",
+    "winner_id": null,
+    "bids": [
+      {
+        "id": "bid_018_09",
+        "bidder_id": "usr_005",
+        "amount": 3693453,
+        "created_at": "2026-09-02T11:28:53.820581"
+      },
+      {
+        "id": "bid_018_07",
+        "bidder_id": "usr_011",
+        "amount": 3605541,
+        "created_at": "2026-09-02T11:35:27.820581"
+      },
+      {
+        "id": "bid_018_11",
+        "bidder_id": "usr_013",
+        "amount": 3749397,
+        "created_at": "2026-09-02T12:16:55.820581"
+      },
+      {
+        "id": "bid_018_08",
+        "bidder_id": "usr_001",
+        "amount": 3645501,
+        "created_at": "2026-09-02T12:18:13.820581"
+      },
+      {
+        "id": "bid_018_10",
+        "bidder_id": "usr_005",
+        "amount": 3741405,
+        "created_at": "2026-09-02T12:24:23.820581"
+      },
+      {
+        "id": "bid_018_01",
+        "bidder_id": "usr_001",
+        "amount": 3477669,
+        "created_at": "2026-09-02T12:35:15.820581"
+      },
+      {
+        "id": "bid_018_02",
+        "bidder_id": "usr_016",
+        "amount": 3493653,
+        "created_at": "2026-09-02T13:18:15.820581"
+      },
+      {
+        "id": "bid_018_05",
+        "bidder_id": "usr_018",
+        "amount": 3573573,
+        "created_at": "2026-09-02T13:45:14.820581"
+      },
+      {
+        "id": "bid_018_04",
+        "bidder_id": "usr_020",
+        "amount": 3549597,
+        "created_at": "2026-09-02T13:47:20.820581"
+      },
+      {
+        "id": "bid_018_03",
+        "bidder_id": "usr_007",
+        "amount": 3533613,
+        "created_at": "2026-09-02T14:28:40.820581"
+      },
+      {
+        "id": "bid_018_00",
+        "bidder_id": "usr_018",
+        "amount": 3453693,
+        "created_at": "2026-09-02T14:39:27.820581"
+      },
+      {
+        "id": "bid_018_06",
+        "bidder_id": "usr_002",
+        "amount": 3589557,
+        "created_at": "2026-09-02T14:46:45.820581"
+      }
+    ]
+  },
+  {
+    "id": "auc_0019",
+    "item_name": "Item de Arte 19",
+    "description": "Descripción detallada del item 19 de la categoría Arte.",
+    "category": "Arte",
+    "seller_id": "usr_006",
+    "base_price": 2382026,
+    "min_increment": 23387,
+    "current_highest_bid": 3130410,
+    "published_at": "2026-08-28T21:47:53.577145",
+    "closing_date": "2026-09-02T14:08:07.484626",
+    "status": "CERRADA",
+    "winner_id": "usr_018",
+    "bids": [
+      {
+        "id": "bid_019_02",
+        "bidder_id": "usr_004",
+        "amount": 2545735,
+        "created_at": "2026-08-28T22:07:51.577145"
+      },
+      {
+        "id": "bid_019_06",
+        "bidder_id": "usr_008",
+        "amount": 2990088,
+        "created_at": "2026-08-29T03:18:07.577145"
+      },
+      {
+        "id": "bid_019_03",
+        "bidder_id": "usr_009",
+        "amount": 2639283,
+        "created_at": "2026-08-29T08:06:25.577145"
+      },
+      {
+        "id": "bid_019_07",
+        "bidder_id": "usr_003",
+        "amount": 3083636,
+        "created_at": "2026-08-29T19:03:54.577145"
+      },
+      {
+        "id": "bid_019_00",
+        "bidder_id": "usr_005",
+        "amount": 2382026,
+        "created_at": "2026-08-29T23:34:00.577145"
+      },
+      {
+        "id": "bid_019_04",
+        "bidder_id": "usr_015",
+        "amount": 2756218,
+        "created_at": "2026-08-30T00:47:22.577145"
+      },
+      {
+        "id": "bid_019_01",
+        "bidder_id": "usr_004",
+        "amount": 2498961,
+        "created_at": "2026-08-30T04:23:49.577145"
+      },
+      {
+        "id": "bid_019_08",
+        "bidder_id": "usr_010",
+        "amount": 3130410,
+        "created_at": "2026-08-30T20:58:20.577145"
+      },
+      {
+        "id": "bid_019_05",
+        "bidder_id": "usr_018",
+        "amount": 2849766,
+        "created_at": "2026-09-01T02:03:38.577145"
+      }
+    ]
+  },
+  {
+    "id": "auc_0020",
+    "item_name": "Item de Moda 20",
+    "description": "Descripción detallada del item 20 de la categoría Moda.",
+    "category": "Moda",
+    "seller_id": "usr_016",
+    "base_price": 83832,
+    "min_increment": 37525,
+    "current_highest_bid": 534132,
+    "published_at": "2026-08-29T21:18:12.069907",
+    "closing_date": "2026-09-21T21:48:47.975552",
+    "status": "ABIERTA",
+    "winner_id": null,
+    "bids": [
+      {
+        "id": "bid_020_03",
+        "bidder_id": "usr_002",
+        "amount": 384032,
+        "created_at": "2026-08-30T00:59:48.069907"
+      },
+      {
+        "id": "bid_020_02",
+        "bidder_id": "usr_018",
+        "amount": 346507,
+        "created_at": "2026-08-30T05:45:33.069907"
+      },
+      {
+        "id": "bid_020_07",
+        "bidder_id": "usr_014",
+        "amount": 534132,
+        "created_at": "2026-08-30T06:38:51.069907"
+      },
+      {
+        "id": "bid_020_01",
+        "bidder_id": "usr_013",
+        "amount": 271457,
+        "created_at": "2026-08-31T05:31:51.069907"
+      },
+      {
+        "id": "bid_020_05",
+        "bidder_id": "usr_012",
+        "amount": 459082,
+        "created_at": "2026-08-31T07:47:37.069907"
+      },
+      {
+        "id": "bid_020_04",
+        "bidder_id": "usr_007",
+        "amount": 421557,
+        "created_at": "2026-08-31T16:14:25.069907"
+      },
+      {
+        "id": "bid_020_06",
+        "bidder_id": "usr_011",
+        "amount": 496607,
+        "created_at": "2026-09-02T10:08:36.069907"
+      },
+      {
+        "id": "bid_020_00",
+        "bidder_id": "usr_018",
+        "amount": 83832,
+        "created_at": "2026-09-02T12:35:24.069907"
+      }
+    ]
+  },
+  {
+    "id": "auc_0021",
+    "item_name": "Item de Vehículos 21",
+    "description": "Descripción detallada del item 21 de la categoría Vehículos.",
+    "category": "Vehículos",
+    "seller_id": "usr_010",
+    "base_price": 1774282,
+    "min_increment": 23563,
+    "current_highest_bid": 2127727,
+    "published_at": "2026-09-01T13:53:38.308903",
+    "closing_date": "2026-09-18T23:05:15.874232",
+    "status": "ABIERTA",
+    "winner_id": null,
+    "bids": [
+      {
+        "id": "bid_021_04",
+        "bidder_id": "usr_020",
+        "amount": 2033475,
+        "created_at": "2026-09-01T16:14:25.308903"
+      },
+      {
+        "id": "bid_021_05",
+        "bidder_id": "usr_013",
+        "amount": 2127727,
+        "created_at": "2026-09-01T18:50:28.308903"
+      },
+      {
+        "id": "bid_021_03",
+        "bidder_id": "usr_015",
+        "amount": 1939223,
+        "created_at": "2026-09-01T20:39:29.308903"
+      },
+      {
+        "id": "bid_021_00",
+        "bidder_id": "usr_008",
+        "amount": 1774282,
+        "created_at": "2026-09-01T21:46:25.308903"
+      },
+      {
+        "id": "bid_021_02",
+        "bidder_id": "usr_008",
+        "amount": 1892097,
+        "created_at": "2026-09-01T23:31:07.308903"
+      },
+      {
+        "id": "bid_021_01",
+        "bidder_id": "usr_001",
+        "amount": 1797845,
+        "created_at": "2026-09-02T01:51:36.308903"
+      }
+    ]
+  },
+  {
+    "id": "auc_0022",
+    "item_name": "Item de Hogar 22",
+    "description": "Descripción detallada del item 22 de la categoría Hogar.",
+    "category": "Hogar",
+    "seller_id": "usr_003",
+    "base_price": 737971,
+    "min_increment": 47635,
+    "current_highest_bid": 2691006,
+    "published_at": "2026-08-29T22:48:41.180284",
+    "closing_date": "2026-09-26T15:08:15.227566",
+    "status": "ABIERTA",
+    "winner_id": null,
+    "bids": [
+      {
+        "id": "bid_022_03",
+        "bidder_id": "usr_010",
+        "amount": 1071416,
+        "created_at": "2026-08-30T02:22:07.180284"
+      },
+      {
+        "id": "bid_022_07",
+        "bidder_id": "usr_011",
+        "amount": 1785941,
+        "created_at": "2026-08-30T03:02:53.180284"
+      },
+      {
+        "id": "bid_022_01",
+        "bidder_id": "usr_012",
+        "amount": 833241,
+        "created_at": "2026-08-30T17:46:48.180284"
+      },
+      {
+        "id": "bid_022_00",
+        "bidder_id": "usr_020",
+        "amount": 737971,
+        "created_at": "2026-08-30T20:28:22.180284"
+      },
+      {
+        "id": "bid_022_09",
+        "bidder_id": "usr_004",
+        "amount": 2167021,
+        "created_at": "2026-08-31T00:14:41.180284"
+      },
+      {
+        "id": "bid_022_10",
+        "bidder_id": "usr_002",
+        "amount": 2405196,
+        "created_at": "2026-08-31T10:42:19.180284"
+      },
+      {
+        "id": "bid_022_06",
+        "bidder_id": "usr_013",
+        "amount": 1500131,
+        "created_at": "2026-08-31T12:38:25.180284"
+      },
+      {
+        "id": "bid_022_08",
+        "bidder_id": "usr_004",
+        "amount": 2071751,
+        "created_at": "2026-08-31T21:53:06.180284"
+      },
+      {
+        "id": "bid_022_04",
+        "bidder_id": "usr_014",
+        "amount": 1357226,
+        "created_at": "2026-09-01T04:29:19.180284"
+      },
+      {
+        "id": "bid_022_05",
+        "bidder_id": "usr_011",
+        "amount": 1404861,
+        "created_at": "2026-09-01T09:51:56.180284"
+      },
+      {
+        "id": "bid_022_11",
+        "bidder_id": "usr_004",
+        "amount": 2643371,
+        "created_at": "2026-09-01T10:45:31.180284"
+      },
+      {
+        "id": "bid_022_02",
+        "bidder_id": "usr_013",
+        "amount": 928511,
+        "created_at": "2026-09-01T16:35:37.180284"
+      },
+      {
+        "id": "bid_022_12",
+        "bidder_id": "usr_007",
+        "amount": 2691006,
+        "created_at": "2026-09-02T00:49:09.180284"
+      }
+    ]
+  },
+  {
+    "id": "auc_0023",
+    "item_name": "Item de Coleccionables 23",
+    "description": "Descripción detallada del item 23 de la categoría Coleccionables.",
+    "category": "Coleccionables",
+    "seller_id": "usr_019",
+    "base_price": 3974460,
+    "min_increment": 16757,
+    "current_highest_bid": 3974460,
+    "published_at": "2026-08-29T15:07:11.380847",
+    "closing_date": "2026-09-25T19:01:35.625178",
+    "status": "ABIERTA",
+    "winner_id": null,
+    "bids": [
+      {
+        "id": "bid_023_00",
+        "bidder_id": "usr_006",
+        "amount": 3974460,
+        "created_at": "2026-08-31T18:09:14.380847"
+      }
+    ]
+  },
+  {
+    "id": "auc_0024",
+    "item_name": "Item de Deportes 24",
+    "description": "Descripción detallada del item 24 de la categoría Deportes.",
+    "category": "Deportes",
+    "seller_id": "usr_007",
+    "base_price": 4444535,
+    "min_increment": 35301,
+    "current_highest_bid": 4974050,
+    "published_at": "2026-08-29T13:03:35.173110",
+    "closing_date": "2026-09-27T22:40:20.959154",
+    "status": "ABIERTA",
+    "winner_id": null,
+    "bids": [
+      {
+        "id": "bid_024_02",
+        "bidder_id": "usr_006",
+        "amount": 4621040,
+        "created_at": "2026-08-29T14:25:20.173110"
+      },
+      {
+        "id": "bid_024_03",
+        "bidder_id": "usr_008",
+        "amount": 4726943,
+        "created_at": "2026-08-30T00:14:49.173110"
+      },
+      {
+        "id": "bid_024_00",
+        "bidder_id": "usr_006",
+        "amount": 4444535,
+        "created_at": "2026-08-30T05:38:54.173110"
+      },
+      {
+        "id": "bid_024_01",
+        "bidder_id": "usr_003",
+        "amount": 4585739,
+        "created_at": "2026-09-01T08:02:03.173110"
+      },
+      {
+        "id": "bid_024_06",
+        "bidder_id": "usr_002",
+        "amount": 4974050,
+        "created_at": "2026-09-01T11:23:02.173110"
+      },
+      {
+        "id": "bid_024_05",
+        "bidder_id": "usr_020",
+        "amount": 4903448,
+        "created_at": "2026-09-02T05:40:32.173110"
+      },
+      {
+        "id": "bid_024_04",
+        "bidder_id": "usr_004",
+        "amount": 4797545,
+        "created_at": "2026-09-02T07:32:27.173110"
+      }
+    ]
+  },
+  {
+    "id": "auc_0025",
+    "item_name": "Item de Joyería 25",
+    "description": "Descripción detallada del item 25 de la categoría Joyería.",
+    "category": "Joyería",
+    "seller_id": "usr_015",
+    "base_price": 2228934,
+    "min_increment": 13062,
+    "current_highest_bid": 2477112,
+    "published_at": "2026-08-31T23:38:45.825801",
+    "closing_date": "2026-09-09T22:28:34.187187",
+    "status": "ABIERTA",
+    "winner_id": null,
+    "bids": [
+      {
+        "id": "bid_025_01",
+        "bidder_id": "usr_009",
+        "amount": 2294244,
+        "created_at": "2026-08-31T23:54:32.825801"
+      },
+      {
+        "id": "bid_025_00",
+        "bidder_id": "usr_010",
+        "amount": 2228934,
+        "created_at": "2026-09-01T05:21:00.825801"
+      },
+      {
+        "id": "bid_025_04",
+        "bidder_id": "usr_003",
+        "amount": 2411802,
+        "created_at": "2026-09-01T09:09:33.825801"
+      },
+      {
+        "id": "bid_025_02",
+        "bidder_id": "usr_009",
+        "amount": 2346492,
+        "created_at": "2026-09-01T12:53:22.825801"
+      },
+      {
+        "id": "bid_025_05",
+        "bidder_id": "usr_003",
+        "amount": 2477112,
+        "created_at": "2026-09-01T14:24:32.825801"
+      },
+      {
+        "id": "bid_025_03",
+        "bidder_id": "usr_004",
+        "amount": 2385678,
+        "created_at": "2026-09-02T14:08:24.825801"
+      }
+    ]
+  },
+  {
+    "id": "auc_0026",
+    "item_name": "Item de Coleccionables 26",
+    "description": "Descripción detallada del item 26 de la categoría Coleccionables.",
+    "category": "Coleccionables",
+    "seller_id": "usr_020",
+    "base_price": 1966139,
+    "min_increment": 36121,
+    "current_highest_bid": 3519342,
+    "published_at": "2026-08-30T11:36:24.140531",
+    "closing_date": "2026-09-26T17:35:25.764266",
+    "status": "ABIERTA",
+    "winner_id": null,
+    "bids": [
+      {
+        "id": "bid_026_04",
+        "bidder_id": "usr_006",
+        "amount": 2471833,
+        "created_at": "2026-08-30T19:56:25.140531"
+      },
+      {
+        "id": "bid_026_02",
+        "bidder_id": "usr_009",
+        "amount": 2327349,
+        "created_at": "2026-08-31T02:48:43.140531"
+      },
+      {
+        "id": "bid_026_07",
+        "bidder_id": "usr_019",
+        "amount": 2833043,
+        "created_at": "2026-08-31T20:19:59.140531"
+      },
+      {
+        "id": "bid_026_10",
+        "bidder_id": "usr_002",
+        "amount": 3230374,
+        "created_at": "2026-08-31T22:21:00.140531"
+      },
+      {
+        "id": "bid_026_05",
+        "bidder_id": "usr_012",
+        "amount": 2652438,
+        "created_at": "2026-09-01T06:10:35.140531"
+      },
+      {
+        "id": "bid_026_09",
+        "bidder_id": "usr_006",
+        "amount": 3122011,
+        "created_at": "2026-09-01T07:28:15.140531"
+      },
+      {
+        "id": "bid_026_06",
+        "bidder_id": "usr_017",
+        "amount": 2760801,
+        "created_at": "2026-09-01T07:53:18.140531"
+      },
+      {
+        "id": "bid_026_11",
+        "bidder_id": "usr_001",
+        "amount": 3338737,
+        "created_at": "2026-09-01T12:26:43.140531"
+      },
+      {
+        "id": "bid_026_01",
+        "bidder_id": "usr_005",
+        "amount": 2182865,
+        "created_at": "2026-09-01T19:32:34.140531"
+      },
+      {
+        "id": "bid_026_00",
+        "bidder_id": "usr_016",
+        "amount": 1966139,
+        "created_at": "2026-09-01T19:48:26.140531"
+      },
+      {
+        "id": "bid_026_12",
+        "bidder_id": "usr_001",
+        "amount": 3519342,
+        "created_at": "2026-09-01T20:08:32.140531"
+      },
+      {
+        "id": "bid_026_03",
+        "bidder_id": "usr_016",
+        "amount": 2363470,
+        "created_at": "2026-09-02T02:21:45.140531"
+      },
+      {
+        "id": "bid_026_08",
+        "bidder_id": "usr_018",
+        "amount": 2977527,
+        "created_at": "2026-09-02T05:29:34.140531"
+      }
+    ]
+  },
+  {
+    "id": "auc_0027",
+    "item_name": "Item de Electrónica 27",
+    "description": "Descripción detallada del item 27 de la categoría Electrónica.",
+    "category": "Electrónica",
+    "seller_id": "usr_009",
+    "base_price": 3319950,
+    "min_increment": 1251,
+    "current_highest_bid": 3351225,
+    "published_at": "2026-08-31T04:46:47.839100",
+    "closing_date": "2026-09-26T03:52:41.307185",
+    "status": "ABIERTA",
+    "winner_id": null,
+    "bids": [
+      {
+        "id": "bid_027_01",
+        "bidder_id": "usr_017",
+        "amount": 3322452,
+        "created_at": "2026-08-31T10:00:17.839100"
+      },
+      {
+        "id": "bid_027_02",
+        "bidder_id": "usr_016",
+        "amount": 3328707,
+        "created_at": "2026-08-31T13:43:09.839100"
+      },
+      {
+        "id": "bid_027_04",
+        "bidder_id": "usr_012",
+        "amount": 3338715,
+        "created_at": "2026-08-31T20:29:05.839100"
+      },
+      {
+        "id": "bid_027_05",
+        "bidder_id": "usr_018",
+        "amount": 3346221,
+        "created_at": "2026-09-01T19:51:15.839100"
+      },
+      {
+        "id": "bid_027_06",
+        "bidder_id": "usr_011",
+        "amount": 3351225,
+        "created_at": "2026-09-02T06:19:36.839100"
+      },
+      {
+        "id": "bid_027_03",
+        "bidder_id": "usr_007",
+        "amount": 3333711,
+        "created_at": "2026-09-02T08:27:24.839100"
+      },
+      {
+        "id": "bid_027_00",
+        "bidder_id": "usr_002",
+        "amount": 3319950,
+        "created_at": "2026-09-02T11:23:52.839100"
+      }
+    ]
+  },
+  {
+    "id": "auc_0028",
+    "item_name": "Item de Deportes 28",
+    "description": "Descripción detallada del item 28 de la categoría Deportes.",
+    "category": "Deportes",
+    "seller_id": "usr_003",
+    "base_price": 3666836,
+    "min_increment": 13319,
+    "current_highest_bid": null,
+    "published_at": "2026-09-01T00:18:55.548569",
+    "closing_date": "2026-09-29T21:56:12.744245",
+    "status": "CANCELADA",
+    "winner_id": null,
+    "bids": []
+  },
+  {
+    "id": "auc_0029",
+    "item_name": "Item de Arte 29",
+    "description": "Descripción detallada del item 29 de la categoría Arte.",
+    "category": "Arte",
+    "seller_id": "usr_003",
+    "base_price": 3619446,
+    "min_increment": 23956,
+    "current_highest_bid": null,
+    "published_at": "2026-08-29T10:03:54.595438",
+    "closing_date": "2026-09-01T08:57:08.089925",
+    "status": "DESIERTA",
+    "winner_id": null,
+    "bids": []
+  },
+  {
+    "id": "auc_0030",
+    "item_name": "Item de Joyería 30",
+    "description": "Descripción detallada del item 30 de la categoría Joyería.",
+    "category": "Joyería",
+    "seller_id": "usr_010",
+    "base_price": 1134255,
+    "min_increment": 27795,
+    "current_highest_bid": 1495590,
+    "published_at": "2026-08-29T05:14:21.245135",
+    "closing_date": "2026-09-19T23:17:34.628029",
+    "status": "ABIERTA",
+    "winner_id": null,
+    "bids": [
+      {
+        "id": "bid_030_00",
+        "bidder_id": "usr_016",
+        "amount": 1134255,
+        "created_at": "2026-08-29T11:24:08.245135"
+      },
+      {
+        "id": "bid_030_02",
+        "bidder_id": "usr_003",
+        "amount": 1301025,
+        "created_at": "2026-08-30T02:06:19.245135"
+      },
+      {
+        "id": "bid_030_04",
+        "bidder_id": "usr_011",
+        "amount": 1495590,
+        "created_at": "2026-08-30T07:43:19.245135"
+      },
+      {
+        "id": "bid_030_01",
+        "bidder_id": "usr_004",
+        "amount": 1273230,
+        "created_at": "2026-09-01T07:51:56.245135"
+      },
+      {
+        "id": "bid_030_03",
+        "bidder_id": "usr_013",
+        "amount": 1467795,
+        "created_at": "2026-09-01T09:33:28.245135"
+      }
+    ]
+  }
+]
