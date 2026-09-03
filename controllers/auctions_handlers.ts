@@ -34,3 +34,9 @@ export const cancelAuction = (req: Request, res: Response) => {
 
 
 };
+
+export const placeBid = (req: Request, res: Response) => {
+
+
+
+};
