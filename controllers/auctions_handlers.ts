@@ -19,6 +19,12 @@ export const getAllAuctions = (req: Request, res: Response) => {
 
 export const getAuctionById = (req: Request, res: Response) => {
 
-    
 
-}
+
+};
+
+export const createAuction = (req: Request, res: Response) => {
+
+
+
+};
