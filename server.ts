@@ -4,6 +4,7 @@ import auctionsRouter from "./routes/auctions_routes";
 import authRouter from "./routes/auth_routes";
 import usersRouter from "./routes/users_routes";
 import paymentsRouter from "./routes/payments_routes";
+import { errorHandler } from "./middlewares/error_handler";
 
 dotenv.config();
 
@@ -17,6 +18,8 @@ app.use("/api/v1", auctionsRouter);
 app.use("/api/v1", authRouter);
 app.use("/api/v1", usersRouter);
 app.use("/api/v1", paymentsRouter);
+
+app.use(errorHandler);
 
 app.listen(PORT, () => {
     console.log(`SERVER RUNNING ON PORT ${PORT}!`);
