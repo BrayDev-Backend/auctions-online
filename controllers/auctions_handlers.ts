@@ -28,3 +28,9 @@ export const createAuction = (req: Request, res: Response) => {
 
 
 };
+
+export const cancelAuction = (req: Request, res: Response) => {
+
+
+
+};
