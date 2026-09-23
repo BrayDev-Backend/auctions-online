@@ -1,10 +1,7 @@
 import express, { Application } from "express";
 import dotenv from "dotenv";
-import auctionsRouter from "./src/application/routes/auctions_routes";
-import authRouter from "./src/application/routes/auth_routes";
-import usersRouter from "./src/application/routes/users_routes";
-import paymentsRouter from "./src/application/routes/payments_routes";
-import { errorHandler } from "./src/application/middlewares/error_handler";
+import { errorHandler } from "./src/application/middlewares/error.middleware";
+import routes from "./src/application/routes/index.routes";
 
 dotenv.config();
 
@@ -14,10 +11,7 @@ const app: Application = express();
 
 app.use(express.json());
 
-app.use("/api/v1", auctionsRouter);
-app.use("/api/v1", authRouter);
-app.use("/api/v1", usersRouter);
-app.use("/api/v1", paymentsRouter);
+app.use("/api/v1", routes);
 
 app.use(errorHandler);
 

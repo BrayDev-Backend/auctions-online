@@ -3,17 +3,7 @@ import { auctions } from "../../infrastructure/db/auctions_mockdata";
 
 export const getAllAuctions = (req: Request, res: Response) => {
     
-    const { category } = req.query;
 
-    if (category) {
-        const filteredAuctions = auctions.filter(
-            (auction) => auction.category === category
-        );
-
-        return res.json(filteredAuctions);
-    }
-
-    res.json(auctions);
 
 };
 
