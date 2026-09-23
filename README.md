@@ -2,7 +2,7 @@
 
 API REST para una plataforma de subastas en línea, construida con Express y TypeScript. El proyecto incluye un dataset de subastas en memoria y una estructura inicial para autenticación, usuarios, órdenes, pagos, pujas y gestión del ciclo de vida de las subastas.
 
-> **Estado actual:** la única operación funcional es `GET /api/v1/auctions`. El resto de rutas están registradas, pero sus controladores todavía no tienen implementación y no deben considerarse disponibles para producción.
+> **Estado actual:** el proyecto tiene la base del servidor y las rutas registradas bajo `/api/v1`, pero la lógica de negocio de la mayoría de endpoints aún no está implementada. La única operación funcional visible es `GET /api/v1/auctions`; el resto de rutas siguen siendo esqueleto o placeholders con intención de desarrollo futuro.
 
 ## Contenido
 
@@ -226,12 +226,11 @@ Existe un `errorHandler` preparado con esta estructura:
 }
 ```
 
-Sin embargo, el middleware todavía no está conectado en `server.ts`, por lo que no debe asumirse este formato para todos los errores. Tampoco existen errores de dominio implementados para subastas, usuarios, pujas, órdenes o pagos.
-
-Las rutas inexistentes y algunos errores del parser JSON utilizan actualmente la respuesta predeterminada de Express.
+Este middleware sí está conectado en `server.ts` y se registra con `app.use(errorHandler)`, por lo que la aplicación ya cuenta con un punto central de manejo de errores. Aun así, no existen errores de dominio específicos para subastas, usuarios, pujas, órdenes o pagos, y las rutas inexistentes o los errores del parser JSON pueden seguir respondiendo con el formato estándar de Express si no se gestionan de forma explícita.
 
 ## Limitaciones actuales
 
+- La mayor parte de las rutas están registradas, pero la lógica de negocio no está implementada.
 - No hay persistencia ni base de datos.
 - No hay autenticación, JWT, sesiones, roles ni permisos.
 - No hay validación de bodies, parámetros, importes, fechas o categorías.
@@ -240,7 +239,7 @@ Las rutas inexistentes y algunos errores del parser JSON utilizan actualmente la
 - `min_increment` todavía no se utiliza.
 - No hay paginación, ordenamiento ni filtros por estado o fecha.
 - No hay CORS, rate limiting ni documentación OpenAPI.
-- No hay respuestas JSON uniformes para todos los errores.
+- El manejador de errores está conectado, pero aún no hay errores de dominio ni respuestas JSON uniformes para todas las casuísticas.
 - No hay pruebas automatizadas.
 
 ## Próximos pasos

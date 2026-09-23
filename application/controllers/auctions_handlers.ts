@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { auctions } from "../data/auctions_mockdata";
+import { auctions } from "../../infrastructure/db/auctions_mockdata";
 
 export const getAllAuctions = (req: Request, res: Response) => {
     

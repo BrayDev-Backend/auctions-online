@@ -1,26 +1,31 @@
 {
   "name": "auctions-online",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "API REST para una plataforma de subastas en línea con Express y TypeScript.",
+  "main": "dist/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"No automated tests configured yet.\" && exit 1",
     "dev": "nodemon --exec \"npm run build && npm start\"",
     "start": "node dist/server.js",
     "build": "tsc"
   },
-  "keywords": [],
+  "keywords": [
+    "auctions",
+    "api",
+    "express",
+    "typescript"
+  ],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
-  "devDependencies": {
-    "@types/express": "^5.0.6",
-    "express": "^5.2.1",
-    "nodemon": "^3.1.14",
-    "typescript": "^7.0.2"
-  },
   "dependencies": {
     "@types/node": "^26.4.1",
-    "dotenv": "^17.4.2"
+    "dotenv": "^17.4.2",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "nodemon": "^3.1.14",
+    "typescript": "^5.7.3"
   }
 }

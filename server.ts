@@ -1,10 +1,10 @@
 import express, { Application } from "express";
 import dotenv from "dotenv";
-import auctionsRouter from "./routes/auctions_routes";
-import authRouter from "./routes/auth_routes";
-import usersRouter from "./routes/users_routes";
-import paymentsRouter from "./routes/payments_routes";
-import { errorHandler } from "./middlewares/error_handler";
+import auctionsRouter from "./application/routes/auctions_routes";
+import authRouter from "./application/routes/auth_routes";
+import usersRouter from "./application/routes/users_routes";
+import paymentsRouter from "./application/routes/payments_routes";
+import { errorHandler } from "./application/middlewares/error_handler";
 
 dotenv.config();
 
