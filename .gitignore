@@ -31,3 +31,6 @@ logs/
 
 # Docker
 .devcontainer
+
+# Skills
+.agents
