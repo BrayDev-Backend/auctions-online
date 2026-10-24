@@ -4,10 +4,20 @@
   "description": "API REST para una plataforma de subastas en línea con Express y TypeScript.",
   "main": "dist/server.js",
   "scripts": {
-    "test": "echo \"No automated tests configured yet.\" && exit 1",
-    "dev": "nodemon --exec \"npm run build && npm start\"",
+    "dev": "nodemon",
+    "build": "prisma generate && tsc",
     "start": "node dist/server.js",
-    "build": "tsc"
+    "postinstall": "prisma generate",
+    "typecheck": "tsc --noEmit -p tsconfig.test.json",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "db:up": "docker compose up -d",
+    "db:down": "docker compose down",
+    "db:migrate": "prisma migrate dev",
+    "db:deploy": "prisma migrate deploy",
+    "db:seed": "prisma db seed",
+    "db:reset": "prisma migrate reset",
+    "webhook:simulate": "tsx scripts/simulate-payment.ts"
   },
   "keywords": [
     "auctions",
@@ -19,13 +29,33 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
+    "@prisma/adapter-pg": "^7.10.0",
+    "@prisma/client": "^7.10.0",
     "@types/node": "^26.4.1",
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
     "dotenv": "^17.4.2",
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.3",
+    "pg": "^8.23.1",
+    "socket.io": "^4.8.4",
+    "zod": "^4.6.7"
   },
   "devDependencies": {
+    "@types/cors": "^2.8.19",
     "@types/express": "^5.0.6",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/pg": "^8.23.1",
     "nodemon": "^3.1.14",
-    "typescript": "^5.7.3"
+    "prisma": "^7.10.0",
+    "socket.io-client": "^4.8.4",
+    "tsx": "^4.23.15",
+    "typescript": "^5.7.3",
+    "vitest": "^5.0.4"
+  },
+  "allowScripts": {
+    "prisma@7.10.0": true,
+    "@prisma/engines@7.10.0": true,
+    "esbuild@0.28.2": true
   }
 }
