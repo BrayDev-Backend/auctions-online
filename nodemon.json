@@ -1,6 +1,11 @@
 {
-  "watch": ["controllers", "routes", "data", "server.ts"],
-  "ignore": ["dist", "node_modules"],
-  "ext": "ts",
-  "exec": "npm run build && npm start"
+  "watch": [
+    "src",
+    "server.ts"
+  ],
+  "ignore": [
+    "src/infrastructure/database/generated"
+  ],
+  "ext": "ts,json",
+  "exec": "tsx server.ts"
 }

@@ -34,3 +34,4 @@ logs/
 
 # Skills
 .agents
+/src/infrastructure/database/generated/prisma

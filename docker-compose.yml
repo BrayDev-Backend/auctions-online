@@ -1,18 +1,26 @@
-version: '3.8'
-
 services:
   postgres:
-    image: postgres:latest
+    # Pinned major version: "latest" can jump to a new major (e.g. 18+) which
+    # changes the data directory layout and breaks existing volumes.
+    image: postgres:17-alpine
     container_name: auctions_db
     restart: unless-stopped
+    env_file:
+      - .env
     environment:
       POSTGRES_USER: ${DB_USER}
       POSTGRES_PASSWORD: ${DB_PASSWORD}
       POSTGRES_DB: ${DB_NAME}
     ports:
-      - "${DB_PORT}:{DB_PORT}"
+      # host_port:container_port -> Postgres always listens on 5432 inside the container.
+      - "${DB_PORT}:5432"
     volumes:
       - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER} -d ${DB_NAME}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
 
 volumes:
   pgdata:
