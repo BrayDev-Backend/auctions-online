@@ -1,0 +1,131 @@
+// Prisma schema for the Online Auction Platform (Phase 2: PostgreSQL).
+// This file belongs to the INFRASTRUCTURE layer: the domain never imports Prisma.
+// Docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider     = "prisma-client"
+  output       = "../src/infrastructure/database/generated/prisma"
+  moduleFormat = "cjs"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+enum AuctionStatus {
+  OPEN
+  CANCELLED
+  CLOSED
+  DESERTED
+  BREACH
+}
+
+enum OrderStatus {
+  PENDING
+  PAID
+  EXPIRED
+}
+
+model User {
+  id           String   @id
+  name         String
+  email        String   @unique // RN-22: emails are unique
+  passwordHash String   @map("password_hash") // RN-22 / RNF-16: never store plain passwords
+  createdAt    DateTime @default(now()) @map("created_at")
+
+  auctionsAsSeller Auction[]            @relation("AuctionSeller")
+  auctionsAsWinner Auction[]            @relation("AuctionWinner")
+  bids             Bid[]
+  rejectedBids     RejectedBidAttempt[]
+  orders           PaymentOrder[]
+
+  @@map("users")
+}
+
+model Auction {
+  id           String        @id
+  itemName     String        @map("item_name")
+  description  String
+  category     String
+  sellerId     String        @map("seller_id")
+  // RN-21: money is stored as integer COP. BigInt because COP values can exceed 2^31.
+  basePrice    BigInt        @map("base_price")
+  minIncrement BigInt        @map("min_increment")
+  publishedAt  DateTime      @map("published_at")
+  closingDate  DateTime      @map("closing_date")
+  status       AuctionStatus @default(OPEN)
+  winnerId     String?       @map("winner_id")
+
+  seller       User                 @relation("AuctionSeller", fields: [sellerId], references: [id])
+  winner       User?                @relation("AuctionWinner", fields: [winnerId], references: [id])
+  bids         Bid[]
+  rejectedBids RejectedBidAttempt[]
+  order        PaymentOrder?
+
+  @@index([status])
+  @@index([category])
+  @@map("auctions")
+}
+
+model Bid {
+  id        String   @id
+  auctionId String   @map("auction_id")
+  bidderId  String   @map("bidder_id")
+  amount    BigInt
+  createdAt DateTime @map("created_at")
+
+  auction Auction @relation(fields: [auctionId], references: [id])
+  bidder  User    @relation(fields: [bidderId], references: [id])
+
+  // Every accepted bid must be strictly higher than the previous one (RN-09),
+  // so two bids of the same auction can never share an amount. Safety net for races.
+  @@unique([auctionId, amount])
+  @@map("bids")
+}
+
+// RN-12: audit trail of every rejected bid.
+model RejectedBidAttempt {
+  id            String   @id
+  auctionId     String   @map("auction_id")
+  bidderId      String   @map("bidder_id")
+  amount        BigInt
+  reasonCode    String   @map("reason_code")
+  reasonMessage String   @map("reason_message")
+  attemptedAt   DateTime @map("attempted_at")
+
+  auction Auction @relation(fields: [auctionId], references: [id])
+  bidder  User    @relation(fields: [bidderId], references: [id])
+
+  @@index([auctionId])
+  @@map("rejected_bid_attempts")
+}
+
+// RN-15: generated when an auction is awarded. One order per auction (RN-16).
+model PaymentOrder {
+  id        String      @id
+  auctionId String      @unique @map("auction_id")
+  winnerId  String      @map("winner_id")
+  amount    BigInt
+  status    OrderStatus @default(PENDING)
+  createdAt DateTime    @map("created_at")
+  expiresAt DateTime    @map("expires_at")
+  paidAt    DateTime?   @map("paid_at")
+
+  auction Auction @relation(fields: [auctionId], references: [id])
+  winner  User    @relation(fields: [winnerId], references: [id])
+
+  @@index([winnerId])
+  @@map("payment_orders")
+}
+
+// RN-19: memory of processed payment notifications (idempotency by gateway event id).
+model ProcessedWebhookEvent {
+  eventId              String      @id @map("event_id")
+  orderId              String      @map("order_id")
+  paymentStatus        String      @map("payment_status")
+  resultingOrderStatus OrderStatus @map("resulting_order_status")
+  processedAt          DateTime    @map("processed_at")
+
+  @@index([orderId])
+  @@map("processed_webhook_events")
+}
