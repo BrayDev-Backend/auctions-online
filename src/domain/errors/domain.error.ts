@@ -118,3 +118,29 @@ export class OrderAccessDeniedError extends DomainError {
   readonly errorCode = "ORDER_ACCESS_DENIED";
   override readonly statusCode = 403;
 }
+
+/** RN-20: a payment arrived after the 48h deadline (or the order already expired). */
+export class OrderExpiredError extends DomainError {
+  readonly errorCode = "ORDER_EXPIRED";
+  override readonly statusCode = 409;
+}
+
+// ---------- Payment webhook ----------
+
+/** RN-18: the notification could not be authenticated. Nothing is changed. */
+export class InvalidWebhookSignatureError extends DomainError {
+  readonly errorCode = "INVALID_WEBHOOK_SIGNATURE";
+  override readonly statusCode = 401;
+}
+
+/** The paid amount differs from the order amount: rejected without changing state. */
+export class PaymentAmountMismatchError extends DomainError {
+  readonly errorCode = "PAYMENT_AMOUNT_MISMATCH";
+  override readonly statusCode = 422;
+}
+
+/** The same event_id was already used for a different order (RN-19 safety net). */
+export class WebhookEventConflictError extends DomainError {
+  readonly errorCode = "WEBHOOK_EVENT_CONFLICT";
+  override readonly statusCode = 409;
+}
