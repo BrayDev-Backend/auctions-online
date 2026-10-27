@@ -1,3 +1,4 @@
+import { OrderExpiredError } from "../errors/domain.error";
 import { Money } from "../value-objects/money.vo";
 import { OrderStatus } from "../value-objects/order-status.vo";
 
@@ -78,11 +79,28 @@ export class PaymentOrder {
   }
 
   /**
-   RN-20 (lazy): a pending order past its deadline expires
-   Returns true only the moment it changes to EXPIRED
-   
-   RN-17: there is NO method that marks an order as paid here that will only
-   happen through the payment webhook not implemented yet
+   * RN-17: the ONLY way an order becomes PAID. It is called exclusively by the
+   * payment webhook use case, never automatically by the platform.
+   *
+   * Returns true when the order changed to PAID, false when it was already PAID
+   * (idempotent, RN-19). Throws OrderExpiredError when the 48h deadline has
+   * passed (RN-20).
+   */
+  markAsPaid(now: Date): boolean {
+    if (this._status === "PAID") {
+      return false;
+    }
+    if (this._status === "EXPIRED" || now.getTime() > this.expiresAt.getTime()) {
+      throw new OrderExpiredError("The payment deadline of this order has passed.");
+    }
+    this._status = "PAID";
+    this._paidAt = now;
+    return true;
+  }
+
+  /**
+   * RN-20 (lazy): a pending order past its deadline expires.
+   * Returns true only the moment it changes to EXPIRED.
    */
   expireIfDue(now: Date): boolean {
     if (this._status !== "PENDING" || now.getTime() <= this.expiresAt.getTime()) {
