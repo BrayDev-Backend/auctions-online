@@ -1,9 +1,11 @@
-import express, { Router } from "express";
-import { loginUser, registerUser } from "../controllers/auth.controller";
+import { Router } from "express";
+import { AuthController } from "../controllers/auth.controller";
+import { validateBody } from "../middlewares/validate.middleware";
+import { loginSchema, registerSchema } from "../validators/schemas";
 
-const authRoutes: Router = express.Router();
-
-authRoutes.post("/register", registerUser);
-authRoutes.post("/login", loginUser);
-
-export default authRoutes;
+export const createAuthRoutes = (controller: AuthController): Router => {
+  const router = Router();
+  router.post("/register", validateBody(registerSchema), controller.register);
+  router.post("/login", validateBody(loginSchema), controller.login);
+  return router;
+};

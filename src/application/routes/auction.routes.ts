@@ -1,13 +1,19 @@
-import express, { Router } from "express";
-import { cancelAuction, createAuction, getAllAuctions, getAuctionById, placeBid } from "../controllers/auction.controller";
+import { RequestHandler, Router } from "express";
+import { AuctionController } from "../controllers/auction.controller";
+import { validateBody } from "../middlewares/validate.middleware";
+import { createAuctionSchema, placeBidSchema } from "../validators/schemas";
 
-const auctionRoutes: Router = express.Router();
+export const createAuctionRoutes = (controller: AuctionController, authenticate: RequestHandler): Router => {
+  const router = Router();
 
-auctionRoutes.get("/", getAllAuctions);
-auctionRoutes.get("/:auction_id", getAuctionById);
-auctionRoutes.post("/", createAuction);
-auctionRoutes.patch("/:auction_id/cancel", cancelAuction);
-auctionRoutes.post("/:auction_id/bids", placeBid);
+  // Public: anybody can browse auctions and the public bid history (RN-23).
+  router.get("/", controller.list);
+  router.get("/:auction_id", controller.getById);
 
-export default auctionRoutes;
+  // Protected: need a valid JWT.
+  router.post("/", authenticate, validateBody(createAuctionSchema), controller.create);
+  router.patch("/:auction_id/cancel", authenticate, controller.cancel);
+  router.post("/:auction_id/bids", authenticate, validateBody(placeBidSchema), controller.placeBid);
 
+  return router;
+};
